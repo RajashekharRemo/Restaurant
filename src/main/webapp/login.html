@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<style>
+		nav {
+			display: flex;
+			padding-top: 0px;
+			background-color: brown;
+			height: 70px;
+			
+		}
+
+	nav	button {
+			margin: 20px 0px 0px 30px;
+
+		}
+
+		.hom {
+			margin-left: 20px;
+			color: beige;
+		}
+
+	
+
+		form {
+			transform: translate(50px, 80px);
+			border: 2px solid black;
+			height: 250px;
+			width: 300px;
+			padding: 20px 0px 0px 30px;
+		}
+
+		input {
+			border: 2px solid black;
+			height: 25px;
+			width: 260px;
+			padding-left: 10px;
+		}
+
+		#create_account{
+			margin-left: 170px;
+		}
+
+		#raj {
+			margin-left: 140px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<h1 class="hom">LOGIN</h1>
+		<h1 class="hom">RAJ RESTAU</h1>
+		<a href="./home.html"><button>HOME</button></a>
+	</nav>
+
+	<form action="login" method="post">
+		<input type="text" placeholder="email/phone number" required name="mail"><br><br>
+		<input type="password" placeholder="password" required name="paswa"><br><br>
+		<a>forget password?</a><br><br>
+		<button class="login">LOGIN</button><button id="raj">CANCLE</button><br><br>
+		<a href="./signup.html" id="create_account">create account</a>
+	</form>
+
+</body>
+
+</html>

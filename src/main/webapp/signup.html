@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+
+	<style>
+		nav {
+			display: flex;
+			padding-top: 0px;
+			background-color: brown;
+			height: 70px;
+			position: sticky;
+			top: 0%;
+			z-index: 1;
+		}
+
+		nav button {
+			margin: 20px 0px 0px 30px;
+
+		}
+
+		.hom {
+			margin-left: 20px;
+			color: beige;
+		}
+
+
+		form {
+			transform: translate(50px, 80px);
+			border: 2px solid black;
+			height: 720px;
+			width: 300px;
+			padding: 10px 0px 0px 30px;
+		}
+
+		input {
+			border: 2px solid black;
+			height: 25px;
+			width: 260px;
+			padding-left: 10px;
+		}
+
+		#raj {
+			margin-left: 50px;
+		}
+
+		.gender {
+			width: 15px;
+			padding: 5px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<h1 class="hom">SIGNUP</h1>
+		<h1 class="hom">RAJ RESTAU</h1>
+		<a href="./home.html"><button>HOME</button></a>
+	</nav>
+
+	<form action="signup" method="post" enctype="multipart/form-data">
+		<!--for image won't bydefaultly, u should write enctype -->
+
+		<h3>Enter Details</h3>
+		<input type="text" placeholder="Full Name" name="fullname" required><br><br>
+		<input type="text" placeholder="email" name="email" required><br><br>
+		<input type="text" inputmode="numeric" placeholder="phone number" name="num" required maxlength="10"><br><br>
+		<input type="password" placeholder="password" name="psw" required><br><br>
+		<label for="DOB">DOB</label>
+		<input type="date" name="dob">
+		<label>Gender</label><br><br>
+		<input type="radio" name="Gender" value="male" class="gender"><label for="male">male</label><br><br>
+		<input type="radio" name="Gender" value="female" class="gender"><label for="female">female</label><br><br>
+		<label>Drop your resume here</label><br><br><input type="file" name="image" required><br><br>
+		<label for="city">city</label>
+		<select name="city" required>
+			<option>Andhra Pradesh</option>
+			<option>Karnataka</option>
+			<option>Tamilanadu</option>
+			<option>Kerala</option>
+		</select><br><br>
+		<input type="checkbox" class="gender" name="agreebox" value="agreed for policy" required><label>Yes, I have read
+			and consent to the terms and conditions</label><br><br>
+		<button>CREATE ACCOUNT</button><button id="raj">CANCLE</button><br><br>
+		<b>already have account?</b><a href="./login.html">click here</a>
+	</form>
+
+
+
+</body>
+
+</html>
